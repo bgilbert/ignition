@@ -25,3 +25,5 @@ require (
 	google.golang.org/api v0.26.0
 	google.golang.org/genproto v0.0.0-20200610104632-a5b850bcf112 // indirect
 )
+
+replace github.com/coreos/vcontext v0.0.0-20201120045928-b0e13dab675c => github.com/bgilbert/vcontext v0.0.0-20210406234027-ca4cfa0b8dc5

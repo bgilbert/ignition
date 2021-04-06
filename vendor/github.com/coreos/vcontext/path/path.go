@@ -41,6 +41,10 @@ func (c ContextPath) String() string {
 	return strings.Join(strs, ".")
 }
 
+// Append returns a new ContextPath with the specified elements appended.
+// The original slice is sometimes reused, so if the original path might be
+// used in further Append operations, the returned path must be copied
+// before it is persisted.
 func (c ContextPath) Append(e ...interface{}) ContextPath {
 	return ContextPath{
 		Path: append(c.Path, e...),
